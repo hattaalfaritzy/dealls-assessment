@@ -9,10 +9,10 @@ export default function Table({
 }: Props) {
     return (
         <div
-            className={clsx('relative mb-4 overflow-x-auto', classNameWrapper)}
+            className={clsx('relative mb-4 overflow-x-auto w-full', classNameWrapper)}
         >
             <table className={clsx('table', className)}>
-                <thead className='sticky z-10 top-0 p-4 bg-[#F9FAFF] border-b border-[#F4F4F4]'>
+                <thead className='sticky z-10 top-0 p-4 bg-primary text-white border-b border-[#F4F4F4] w-full'>
                     <tr>
                         {columns.map((item: any, index: number | string) => (
                             <TableHeader key={index} label={item} />

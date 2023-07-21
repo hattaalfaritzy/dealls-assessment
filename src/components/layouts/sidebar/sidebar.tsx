@@ -55,7 +55,7 @@ export default function Sidebar() {
                 </div>
                 <div className='flex flex-col space-y-3 px-6 py-8 border-opacity-10 border-y'>
                     {NAV_MENU.map((item: any, index: string | number) => {
-                        const isActive = pathname.startsWith(item.href);
+                        const isActive = pathname === item.href;
                         return (
                             <Link key={index} href={item.href}>
                                 <div

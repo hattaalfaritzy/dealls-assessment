@@ -7,11 +7,11 @@ export const NAV_MENU = [
     {
         label: 'Products',
         href: '/products',
-        icon: 'dashboard',
+        icon: 'menu',
     },
     {
         label: 'Carts',
         href: '/carts',
-        icon: 'employee',
+        icon: 'menu',
     },
 ];

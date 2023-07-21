@@ -21,7 +21,7 @@ export default function HeaderNavbar() {
                         size='none'
                         onClick={toggleSidebar}
                         iconLeft={
-                            <Icon name='menu' className='text-2xl fill-white' />
+                            <Icon name='menu' className='text-2xl fill-primary' />
                         }
                     />
                 </div>

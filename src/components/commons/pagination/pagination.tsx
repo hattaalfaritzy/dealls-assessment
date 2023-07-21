@@ -13,13 +13,14 @@ export default function Pagination({
 }: Props) {
     const totalPages = Math.ceil(total / itemsPerPage);
     return (
-        <div className={clsx('flex flex-wrap justify-center space-x-2', className)}>
+        <div className={clsx('flex flex-wrap justify-start lg:justify-center space-x-2 w-full lg:w-auto', className)}>
             <Button
                 onClick={() => {
                     setCurrentPage(currentPage - 1);
                     onClickPrev();
                 }}
                 label='Previous'
+                size='sm'
                 disabled={currentPage === 1}
                 outline={currentPage === 1 ? false : true}
             />
@@ -35,8 +36,9 @@ export default function Pagination({
                         disabled={currentPage === 1}
                         outline
                         className='w-10'
+                        size='sm'
                     />
-                    {currentPage > 4 && <Button label='...' outline className='w-10' />}
+                    {currentPage > 4 && <Button label='...' outline className='w-10' size='sm' />}
                 </div>
             )}
 
@@ -53,6 +55,7 @@ export default function Pagination({
                             label={page.toString()}
                             disabled={currentPage === 1}
                             className='w-10'
+                            size='sm'
                             outline={page === currentPage ? false : true}
                         />
                     )
@@ -60,7 +63,7 @@ export default function Pagination({
 
             {currentPage < totalPages - 1 && (
                 <div className='flex flex-row justify-center items-center space-x-2'>
-                    {currentPage < totalPages - 2 && <Button label='...' disabled outline className='w-10' />}
+                    {currentPage < totalPages - 2 && <Button label='...' disabled outline size='sm' className='w-10' />}
                     <Button
                         onClick={() => {
                             setCurrentPage(totalPages);
@@ -70,6 +73,7 @@ export default function Pagination({
                         disabled={currentPage === totalPages}
                         outline
                         className='w-10'
+                        size='sm'
                     />
                 </div>
             )}
@@ -80,6 +84,7 @@ export default function Pagination({
                     onClickNext();
                 }}
                 label='Next'
+                size='sm'
                 disabled={currentPage === totalPages}
                 outline={currentPage === totalPages ? false : true}
             />

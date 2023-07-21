@@ -61,7 +61,7 @@ export default function Products() {
 
     return (
         <div className='flex flex-col w-full space-y-12'>
-            <div className='flex flex-row justify-between items-center'>
+            <div className='flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center space-y-3 lg:space-y-0'>
                 <h3 className='text-3xl text-black font-medium'>List Products</h3>
                 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-row justify-start items-center w-full max-w-sm'>
                     <InputText

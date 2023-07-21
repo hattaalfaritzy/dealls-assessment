@@ -15,7 +15,7 @@ export default function Home() {
 
     return (
         <div className='flex flex-col w-full'>
-            <div className='grid grid-cols-2 gap-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <Card className='flex flex-col justify-center items-center w-full p-12'>
                     <span className='text-lg lg:text-xl'>Data Products</span>
                     <span className='text-2xl lg:text-4xl'>{totalProducts}</span>
