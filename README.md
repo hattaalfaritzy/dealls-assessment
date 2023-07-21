@@ -1,4 +1,4 @@
-# react-w-redux
+# dealls-assessment
 
 Create an admin dashboard and displaying data from a public API.
 
