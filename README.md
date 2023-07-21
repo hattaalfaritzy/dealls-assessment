@@ -4,7 +4,7 @@ Create an admin dashboard and displaying data from a public API.
 
 ## Deploy
 
-https://dealls-assessment.vercel.app/products
+https://dealls-assessment.vercel.app/
 
 ## Getting Started
 
